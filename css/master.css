@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html, body{
+    font-size: 100%;
+    font-family: 'Noto Sans KR', sans-serif; 
+    background-color: #111111;
+}
+a{
+    color: inherit;
+}
+.menu>ul>li{
+    color: #fff;
+    font-size: 1rem;
+}
+header{
+    width: 100%;
+    background: #0b0b0b;
+    display: flex;
+    position: fixed;
+}
+.header{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    background: #0b0b0b;
+    justify-content: space-between;
+}
+.menu>ul{
+    display: flex;
+    padding: 18px 0;
+}
+.logo{
+    padding: 14px 0;
+}
+.menu>ul>li+li{
+    margin-left: 50px;
+}
+
+
+.bg-1{
+    width: 62%;
+    height: 70vh;
+    background-image: url(../images/genesis-main-keyvisual-g80-sport-main-hero-desktop-2560x900-kr.jpg);
+    background-size: cover;
+    background-position: center ;
+    position: relative;
+}
+
+.sec-1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background: #000;
+}
+.bg-1-text{
+    position: absolute;
+    left: -100px;
+    top: 20%;
+}
+.bg-1-text>h1{
+    font-size: 7.5rem;
+    color: #fff;
+    font-weight: 500;
+}
+.bg-1-text>p{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 300;
+    padding-bottom: 8%;
+    padding-top: 2%;
+}
+
+.btn{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff !important;
+    padding: 18px 80px;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: #e21a22;
+    border:1px solid #e21a22;
+}
+.prev{
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    left: 0;
+}
+.prev>p{
+    margin-left: 90px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.prev::before{
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    background-color: #fff;
+    content: "";
+    top: 45%;
+    left: 0;
+}
+.next{
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    right: 0;
+}
+.next>p{
+    margin-right: 90px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.next::before{
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    background-color: #fff;
+    content: "";
+    top: 45%;
+    right: 0;
+}
+
+@-webkit-keyframes scroll-ani {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+
+@-moz-keyframes scroll-ani {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+
+@keyframes scroll-ani {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+
+
+
+
+.mouse-scroll {
+  display: inline-block;
+  line-height: 18px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #7F8C8D;
+  color: #FFF;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  margin-top: 10%;
+  text-decoration: none;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.5;
+}
+  
+  
+.mouse-scroll .mouse {
+    position: relative;
+    display: block;
+    width: 46px;
+    height: 73px;
+    margin: 0 auto 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid #FFF;
+    border-radius: 23px;}
+    
+  
+    .mouse-scroll .mouse .mouse-movement { 
+      position: absolute;
+      display: block;
+      top: 29%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      margin: -4px 0 0 -4px;
+      background: #FFF;
+      border-radius: 50%;
+      -webkit-animation: scroll-ani 4s linear infinite;
+      -moz-animation: scroll-ani 4s linear infinite;
+      animation: scroll-ani 4s linear infinite;
+    }
+    
+  
+    
+ 
+    .mouse-scroll  .mouse-message { 
+      float: left;
+      margin: 0 0 0 7px;
+      padding: 0;
+      -webkit-animation: scroll-ani 4s linear infinite;
+      -moz-animation: scroll-ani 4s linear infinite;
+      animation: scroll-ani 4s linear infinite;
+  }
+  
