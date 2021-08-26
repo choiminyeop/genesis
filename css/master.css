@@ -5,7 +5,13 @@
     list-style: none;
     text-decoration: none;
 }
-
+ul{
+  margin: 0 !important;
+}
+a{
+  color: inherit !important;
+  text-decoration: none !important;
+}
 html, body{
     font-size: 100%;
     font-family: 'Noto Sans KR', sans-serif; 
@@ -79,7 +85,7 @@ html, body{
 a{
     color: inherit;
 }
-.menu>ul>li{
+.main-menu>li{
     color: #fff;
     font-size: 1rem;
 }
@@ -90,22 +96,24 @@ header{
     background: #0b0b0b;
     display: flex;
     position: fixed;
+    z-index: 9999999999;
 }
 .header{
-    width: 60%;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
     background: #0b0b0b;
+    align-items: center;
     justify-content: space-between;
+    padding: 0 10%;
 }
-.menu>ul{
+.main-menu{
     display: flex;
-    padding: 18px 0;
+    padding: 22px 0;
 }
 .logo{
     padding: 14px 0;
 }
-.menu>ul>li+li{
+.main-menu>li+li{
     margin-left: 50px;
 }
 .pl-0{
@@ -125,7 +133,7 @@ header{
 }
 
 .bg-color-black{
-  background-color: rgba(0, 0, 0, 0.9) !important;
+  background-color: #181818 !important;
   
 }
 
@@ -152,7 +160,7 @@ header{
 }
 .bg-1-text{
     position: absolute;
-    left: -100px;
+    left: -60px;
     top: 20%;
 }
 .bg-1-text>h1{
@@ -355,14 +363,23 @@ header{
   width: 100%;
 }
 
+.content-img-text{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .content-img-text-box{
   display: flex;
   flex-direction: column;
-  text-align: left;
   height: 100%;
   justify-content: center;
-  padding: 20px 0;
   width: 100%;
+  align-items: center;
 }
 
 @media(min-width:768px){
@@ -380,4 +397,147 @@ header{
   font-size: 0.75rem !important;  
   margin: 0 !important;
   padding: 0 !important;
+}
+
+@media(max-width:991px){
+  .media-flex-column-reverse{
+    flex-direction: column-reverse;
+  }
+  .media-display-flex{
+    display: flex;
+  }
+}
+
+.slide-img-1{
+  background-image: url(../images/silde-1.jpg);
+  width: 100%;
+  height: 92vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.slide-img-2{
+  background-image: url(../images/silde-2.jpg);
+  width: 100%;
+  height: 92vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.slide-img-3{
+  background-image: url(../images/silde-3.jpg);
+  width: 100%;
+  height: 92vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.slide-img-4{
+  background-image: url(../images/silde-4.jpg);
+  width: 100%;
+  height: 92vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.slide-img-5{
+  background-image: url(../images/silde-5.jpg);
+  width: 100%;
+  height: 92vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.swiper-slide{
+  width: 100% !important;
+}
+
+@media(max-width:991px){
+  .content-img-text-box{
+    padding: 20px 0;
+  }
+}
+
+.xi-angle-left, .xi-angle-right{
+  color: #fff;
+  font-size: 50px;
+  z-index: 99999999999999999;
+  top: 50%;
+  position: absolute;
+}
+.xi-angle-left{
+  left: 20px;
+}
+.xi-angle-right{
+  right: 20px;
+}
+
+.slide-text-box>h1{
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 400;
+}
+.slide-text-box{
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+.top-text{
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+}
+.top-text>h1{
+  display: inline-block;
+  background-color: #000;
+  padding: 2% 0;
+  font-weight: 200;
+}
+
+.toggle-btn{
+  font-size: 40px;
+  color: #fff;
+  display: none;
+}
+
+@media(max-width:768px){
+  .header{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .header>.logo{
+    padding-left: 10px;
+  }
+  .main-menu{
+    flex-direction: column;
+    display: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .main-menu>li+li{
+    margin: 0;
+  }
+  .main-menu>li{
+    padding: 10px 0;
+  }
+  .toggle-btn{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .main-menu.active{
+    display: flex;
+  }
 }
