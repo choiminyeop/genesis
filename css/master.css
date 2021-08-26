@@ -179,6 +179,12 @@ header{
     padding-top: 2%;
 }
 
+@media(max-width:991px){
+  .prev{
+    top: 80% !important;
+  }
+}
+
 .btn{
     background-color: transparent;
     border: 1px solid #fff;
