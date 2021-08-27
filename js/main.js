@@ -7,6 +7,7 @@ toggleBtn.addEventListener('click', ()=> {
 
 
 
+
 $('.safety-slide-menu-2').click(function(){
     $('.safety-slide-menu-text-line-2').fadeIn();
     $('.safety-slide-menu-text-line-1').fadeOut();

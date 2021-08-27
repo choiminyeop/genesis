@@ -780,3 +780,31 @@ header{
   color: #fff;
   font-weight: 400;
 }
+
+.other-content-top{
+  text-align: center;
+}
+.other-content-top>h1{
+  font-size: 30px;
+}
+
+.other-content-text>h3{
+  font-size: 18px;
+}
+.other-content-text>p{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.other-content-img-1>img{
+  width: 100%;
+}
+
+.other-content-img-2>img{
+  width: 100%;
+}
+
+.other-content-img-3>img{
+  width: 100%;
+}
+
