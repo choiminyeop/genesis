@@ -753,3 +753,30 @@ header{
   color: #fff;
 }
 
+
+.last-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.last-content-img{
+  width: 40%;
+}
+
+.last-content-img>img{
+  width: 100%;
+}
+
+.last-top-text{
+  text-align: center;
+  width: 100%;
+  background-color: #000;
+}
+.last-top-text>h1{
+  color: #fff;
+  font-weight: 200;
+}
+.last-top-text>p{
+  color: #fff;
+  font-weight: 400;
+}
