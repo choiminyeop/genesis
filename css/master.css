@@ -91,7 +91,7 @@ a{
 }
 .main-menu>li{
     color: #fff;
-    font-size: 1rem;
+    font-size: 14px;
 }
 
 
@@ -673,6 +673,11 @@ header{
   font-weight: 400;
 }
 
+.color-ad7b61{
+  color: #ad7b61 !important;
+}
+
+
 .safety-slide-menu{
   position: absolute;
   bottom: 10%;
@@ -738,8 +743,13 @@ header{
   position: relative;
 }
 
-
-
-
-
+.safety-slide-menu-text-1{
+  color: #ad7b61;
+}
+.safety-slide-menu-text-2{
+  color: #fff;
+}
+.safety-slide-menu-text-3{
+  color: #fff;
+}
 
